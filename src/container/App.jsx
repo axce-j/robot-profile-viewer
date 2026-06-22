@@ -15,7 +15,9 @@ class App extends React.Component {
   }
   componentDidMount() {
 
-    fetch("https://jsonplaceholder.cypress.io/todos")
+    // fetch("https://jsonplaceholder.cypress.io/todos")
+	fetch("https://jsonplaceholder.typicode.com/todos")	
+	
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
